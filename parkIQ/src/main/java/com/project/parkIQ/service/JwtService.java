@@ -28,5 +28,9 @@ public class JwtService {
         Claims claims = Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload();
         return claims.getSubject();
     }
+    public String extractEmail(String token){
+        Claims claims = Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload();
+        return claims.getSubject();
+    }
 
 }

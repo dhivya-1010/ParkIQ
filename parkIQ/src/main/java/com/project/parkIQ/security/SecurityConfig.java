@@ -10,7 +10,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
-        http.csrf(csrf->csrf.disable()).authorizeHttpRequests(auth->auth.requestMatchers("/auth/**").permitAll().anyRequest().authenticated()).httpBasic(Customizer.withDefaults());
+        http.csrf(csrf->csrf.disable()).authorizeHttpRequests(auth->auth.requestMatchers("/auth/**","/booking/**").permitAll().anyRequest().authenticated());
         return http.build();
     }
 }
