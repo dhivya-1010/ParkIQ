@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #1e293b;
+  color: white;
+  padding: 18px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.hero p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  width: 250px;
+}
+
+/* Common Card */
+
+.container {
+  width: 450px;
+  margin: 30px auto;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow: 0px 4px 12px
+    rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Buttons */
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #2563eb;
+  color: white;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Dashboard */
+
+.slot-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  justify-content: center;
+}
+
+.slot {
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+}
+
+.available {
+  background-color: #86efac;
+}
+
+.booked {
+  background-color: #fca5a5;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
